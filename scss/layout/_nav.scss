@@ -1,0 +1,126 @@
+.main-nav {
+    @include flexbox;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    z-index: 10;
+    background-color: coral;
+    
+    .container {
+        align-items: center;
+
+        .navbar {
+            @include flexbox;
+            margin-left: auto;
+
+            .nav-item {
+
+                .nav-link {
+                    padding: 10px 20px;
+                    margin-right: 20px;
+                }
+
+                .nav-link:last-of-type {
+                    margin-right: none;
+                }
+            
+            }
+        }
+        
+        .menu-icon {
+            display: none;
+            background: transparent;
+            border: none;
+            border-radius: none;
+        }
+
+        @media screen and (max-width: 992px) {
+            .navbar {
+                display: none;
+            }
+
+            .navbar-opened,
+            .navbar-closed {
+                display: block;
+                position: absolute;
+                margin: auto;
+                padding: 10px;
+                width: 60%;
+                text-align: left;
+                animation-duration: 0.4s;
+                background-color: turquoise;
+
+                .nav-item {
+                    padding: 5px 0;
+                    
+                    .nav-link {
+                        margin-right: 0;
+                        display: block;
+                        width: 100%;
+                        margin: auto;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .navbar-opened {
+                top: 90px;
+                left: 0;
+                animation-name: show;
+            }
+
+            .navbar-closed {
+                top: 90px;
+                left: -100%;            
+                animation-name: hide;
+                animation-duration: 0.4s;
+
+                .nav-item {
+                    padding: 15px 0;
+                    
+                    .nav-link {
+                        margin-right: 0;
+                        display: block;
+                        width: 100%;
+                        margin: auto;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            @keyframes show {
+                0% {
+                    left: -100%;
+                    opacity: 0;
+                }
+            
+                100% {
+                    left: 0px;
+                    opacity: 1;
+                }
+            }
+
+            @keyframes hide {
+                0% {
+                    left: 0;
+                    opacity: 1;
+                }
+            
+                100% {
+                    left: -100%;
+                    opacity: 0;
+                }
+            }
+
+            .menu-icon {
+                margin-left: auto;
+                display: block;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,74 @@
+:root {
+    font-size: $base-font-size;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $base-font-size;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.container,
+.container-fluid {
+    margin: 0 auto;
+    @include flexbox;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+
+
+
