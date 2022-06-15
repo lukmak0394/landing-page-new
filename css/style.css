@@ -561,7 +561,36 @@ header .container {
   color: #FFFFFF;
 }
 
-header .learn-more {
+header .header-title {
+  letter-spacing: 1px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  header .header-title {
+    font-size: 2.5rem;
+  }
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-blue {
+  background-color: #0d6efd;
   color: #FFFFFF;
+}
+
+.btn-blue:hover {
+  background-color: #FFFFFF;
+  color: #0d6efd;
+}
+
+.learn-more {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
