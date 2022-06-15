@@ -274,6 +274,11 @@ section {
   padding: 50px 0;
 }
 
+button {
+  border: none;
+  background-color: unset;
+}
+
 .container,
 .container-fluid {
   margin: 0 auto;
@@ -395,12 +400,22 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
 }
 
-.main-nav .navbar .nav-item .nav-link {
-  padding: 10px 20px;
+.main-nav .navbar .nav-item {
   margin-right: 20px;
+}
+
+.main-nav .navbar .nav-item .nav-link,
+.main-nav .navbar .nav-item .switch-lang {
+  padding: 10px 20px;
   color: #FFFFFF;
   font-size: 1.3rem;
   font-weight: 300;
@@ -409,12 +424,13 @@ section {
   transition: all 0.2s;
 }
 
-.main-nav .navbar .nav-item .nav-link:hover {
+.main-nav .navbar .nav-item .nav-link:hover,
+.main-nav .navbar .nav-item .switch-lang:hover {
   background-color: rgba(1, 1, 1, 0.7);
 }
 
-.main-nav .navbar .nav-item .nav-link:last-of-type {
-  margin-right: none;
+.main-nav .navbar .nav-item:last-of-type {
+  margin-right: 0;
 }
 
 .main-nav .logo {
@@ -480,14 +496,18 @@ section {
     transition: all 0.5s;
   }
   .main-nav .navbar .nav-item {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    margin-right: 0;
     width: 100%;
   }
-  .main-nav .navbar .nav-item .nav-link {
-    margin-right: 0;
+  .main-nav .navbar .nav-item .nav-link,
+  .main-nav .navbar .nav-item .switch-lang {
     margin-bottom: inherit;
     font-size: 2rem;
     padding: 10px;
+  }
+  .main-nav .navbar .nav-item:last-of-type {
+    margin-bottom: 0;
   }
   .main-nav .menu-icon {
     color: #FFFFFF;

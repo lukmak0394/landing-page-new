@@ -35,6 +35,11 @@ section {
     padding: 50px 0;
 }
 
+button {
+    border: none;
+    background-color: unset;
+}
+
 .container,
 .container-fluid {
     margin: 0 auto;
