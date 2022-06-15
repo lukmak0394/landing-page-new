@@ -8,10 +8,13 @@ html {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-size: $base-font-size;
+    font-family: $font-stack;
 }
 
 ul {
