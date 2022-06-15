@@ -19,4 +19,13 @@ menuIcon.addEventListener('click', (e) => {
 
 });
 
+// Nav color change when scrolling
+const mainNav = document.querySelector('.main-nav');
+
+window.onscroll = () => {
+
+    window.scrollY > 200 ? mainNav.classList.add('nav-bg-primary') : mainNav.classList.remove('nav-bg-primary');
+    
+}
+
 

@@ -402,7 +402,7 @@ section {
   padding: 10px 20px;
   margin-right: 20px;
   color: #FFFFFF;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 300;
   border-radius: 5px;
   -webkit-transition: all 0.2s;
@@ -422,7 +422,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 2px 0;
-  border-bottom: 2px solid #0d6efd;
+  border-bottom: 3px solid #0d6efd;
 }
 
 .main-nav .menu-icon {
@@ -430,6 +430,35 @@ section {
   background: transparent;
   border: none;
   border-radius: none;
+}
+
+.nav-bg-primary {
+  background-color: #0d6efd;
+  -webkit-animation: nav-bg-primary 0.3s;
+          animation: nav-bg-primary 0.3s;
+}
+
+.nav-bg-primary .navbar .nav-item .nav-link:hover {
+  background-color: #FFFFFF;
+  color: #0d6efd;
+}
+
+@-webkit-keyframes nav-bg-primary {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #0d6efd;
+  }
+}
+
+@keyframes nav-bg-primary {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #0d6efd;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -451,15 +480,14 @@ section {
     transition: all 0.5s;
   }
   .main-nav .navbar .nav-item {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    width: 100%;
   }
   .main-nav .navbar .nav-item .nav-link {
     margin-right: 0;
     margin-bottom: inherit;
+    font-size: 2rem;
     padding: 10px;
-  }
-  .main-nav .navbar .nav-item:last-of-type {
-    margin-bottom: 0;
   }
   .main-nav .menu-icon {
     color: #FFFFFF;
