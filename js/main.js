@@ -1,5 +1,4 @@
 import { language } from "./lang.js";
-console.log(language)
 
 // Mobile navigation show and hide mechanism
 const navBar = document.querySelector('.navbar');
@@ -63,7 +62,7 @@ const validate = (e) => {
         } 
     }
 
-    validationErrors === 0 ? console.log('form submitted') : e.preventDefault();
+    validationErrors === 0 ? true : e.preventDefault();
 }
 
 form.addEventListener('submit',validate);

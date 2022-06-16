@@ -1,6 +1,8 @@
 export  { language }
 
-const switchLangBtn = document.querySelector('.switch-lang');
+document.querySelector('body').onload = () => {
+    getData('./languages/en.json')
+}
 
 let language = "EN";
 
@@ -13,6 +15,7 @@ const techStackLink = document.querySelector('.tech');
 const contactLink = document.querySelector('.contact');
 const headerTitle = document.querySelector('.header-title');
 const headerBtn = document.querySelector('.learn-more');
+
 // Section headers
 const aboutHeader = document.querySelector('.about-header');
 const portfolioHeader = document.querySelector('.projects-header');
@@ -51,20 +54,20 @@ const getData = (directory) => {
         .catch(error => console.log(error))
 }
 
+const switchLangBtn = document.querySelector('.switch-lang');
+
 const switchLanguage = () => {
 
-    switchLangBtn.innerText === 'EN - PL' ? switchLangBtn.innerText = 'PL - EN' : switchLangBtn.innerText = 'EN - PL';
+    language === 'EN' ? switchLangBtn.innerText = 'PL - EN' : switchLangBtn.innerText = 'EN - PL';
 
-    if (switchLangBtn.innerText === 'PL - EN') {
+    if (language === 'EN') {
         language = 'PL';
         getData('./languages/pl.json');
     } else {
         language = 'EN';
         getData('./languages/en.json');
     }
-    
 
 }
-
 
 switchLangBtn.addEventListener('click',switchLanguage);
