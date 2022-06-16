@@ -28,4 +28,44 @@ window.onscroll = () => {
     
 }
 
+// Contact form
+const form = document.querySelector('.contact-form');
+
+const validate = (e) => {
+
+    const name = document.querySelector('#name');
+    const email = document.querySelector('#email');
+    const message = document.querySelector('#message');
+
+    const requiredFields = [name,email,message]
+
+    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    const errorMsg = document.querySelectorAll('.error-msg');
+
+    let validationErrors = 0;
+    
+    if (!email.value.match(mailFormat)) {
+        email.nextElementSibling.innerText = "Invalid email";
+        validationErrors += 1;
+        email.classList.add('input-error')
+    }
+
+    for (el of requiredFields) {
+        if (el.value.trim() === '') {
+            validationErrors += 1;
+            el.classList.add('input-error');
+            el.nextElementSibling.innerText = "Field can't be blank";
+        } else if (el.value.length < 3) {
+            validationErrors += 1;
+            el.classList.add('input-error');
+            el.nextElementSibling.innerText = "Field value can't be shorter than 3 characters";
+        } 
+    }
+
+    validationErrors === 0 ? console.log('form submitted') : e.preventDefault();
+}
+
+form.addEventListener('submit',validate)
+
 

@@ -12,7 +12,6 @@
         width: 50%;
 
         .input-field {
-            margin-bottom: 25px;
             background-color: rgba(107, 117, 125,0.1);
             border-bottom: 2px solid $bg-primary;
             padding: 5px;
@@ -31,7 +30,12 @@
             cursor: pointer;
         }
 
+        .input-error {
+            border-bottom: 2px solid red;
+        }
+
         .input-label {
+            margin-top: 25px;
             letter-spacing: 1px;
             margin-bottom: 5px;
             color: #333;
@@ -40,13 +44,19 @@
 
         .send-message {
             width: 50%;
-            margin: auto;
+            margin: 25px auto;
             font-weight: 700;
         }
 
         .send-message:hover {
             border: 1px solid $bg-primary;
         }
+    }
+
+    .error-msg {
+        color: red;
+        font-style: italic;
+        font-size: 0.8rem;
     }
 
 }
