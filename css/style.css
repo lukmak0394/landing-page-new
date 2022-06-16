@@ -638,6 +638,14 @@ header .header-title {
   opacity: 0.7;
 }
 
+#contact .contact-form .input-label:first-of-type::after,
+#contact .contact-form .input-label:nth-of-type(2)::after,
+#contact .contact-form .input-label:last-of-type::after {
+  content: ' *';
+  color: red;
+  font-weight: 700;
+}
+
 #contact .contact-form .send-message {
   width: 50%;
   margin: 25px auto;
