@@ -4,5 +4,14 @@
     "tech_stack": "Tech Stack",
     "contact": "Contact",
     "header_title": "Welcome to my website",
-    "about_btn": "Learn more"
+    "header_btn": "Learn more",
+    "about_title": "About me",
+    "portfolio_title": "Example projects",
+    "tech_title": "Technologies I use",
+    "contact_title": "Send me a message",
+    "name_label": "Name:",
+    "email_label": "E-mail address:",
+    "phone_label": "Phone:",
+    "message_label": "Your message:",
+    "form_btn": "Send a message"
 }

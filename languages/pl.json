@@ -4,5 +4,14 @@
     "tech_stack": "Technologie",
     "contact": "Kontakt",
     "header_title": "Witam na mojej stronie internetowej",
-    "about_btn": "Dowiedz się więcej"
+    "header_btn": "Dowiedz się więcej",
+    "about_title": "O mnie",
+    "portfolio_title": "Przykładowe projekty",
+    "tech_title": "Wykorzystywane technologie",
+    "contact_title": "Wyślij mi wiadomość",
+    "name_label": "Imię:",
+    "email_label": "Adres E-mail:",
+    "phone_label": "Telefon:",
+    "message_label": "Wiadomość:",
+    "form_btn": "Wyślij wiadomość"
 }

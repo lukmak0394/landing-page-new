@@ -1,3 +1,5 @@
+import { language } from "./lang.js";
+console.log(language)
 
 // Mobile navigation show and hide mechanism
 const navBar = document.querySelector('.navbar');
@@ -41,31 +43,29 @@ const validate = (e) => {
 
     const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    const errorMsg = document.querySelectorAll('.error-msg');
-
     let validationErrors = 0;
     
     if (!email.value.match(mailFormat)) {
-        email.nextElementSibling.innerText = "Invalid email";
+        language === 'EN' ? email.nextElementSibling.innerText = "Invalid email" : email.nextElementSibling.innerText = "Nieprawidłowy adres e-mail";
         validationErrors += 1;
-        email.classList.add('input-error')
-    }
+        email.classList.add('input-error');
+    } 
 
-    for (el of requiredFields) {
+    for (let el of requiredFields) {
         if (el.value.trim() === '') {
             validationErrors += 1;
             el.classList.add('input-error');
-            el.nextElementSibling.innerText = "Field can't be blank";
+            language === 'EN' ? el.nextElementSibling.innerText = "Field can't be blank" : el.nextElementSibling.innerText = "Pole nie może być puste";
         } else if (el.value.length < 3) {
             validationErrors += 1;
             el.classList.add('input-error');
-            el.nextElementSibling.innerText = "Field value can't be shorter than 3 characters";
+            language === 'EN' ? el.nextElementSibling.innerText = "Field value can't be shorter than 3 characters" : el.nextElementSibling.innerText = "Wprowadzona wartość musi mieć conajmniej 3 znaki";
         } 
     }
 
     validationErrors === 0 ? console.log('form submitted') : e.preventDefault();
 }
 
-form.addEventListener('submit',validate)
+form.addEventListener('submit',validate);
 
 
