@@ -31,9 +31,24 @@ a {
     color: #111;
 }
 
-section {
+.section {
     padding: 50px 0;
+
+    .section-header {
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .section-header {
+            padding: 0 30px;
+        }
+    }
+
 }
+
+
 
 button {
     border: none;

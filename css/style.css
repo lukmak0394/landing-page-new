@@ -270,8 +270,20 @@ a {
   color: #111;
 }
 
-section {
+.section {
   padding: 50px 0;
+}
+
+.section .section-header {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .section .section-header {
+    padding: 0 30px;
+  }
 }
 
 button {
@@ -570,6 +582,74 @@ header .header-title {
 @media screen and (max-width: 992px) {
   header .header-title {
     font-size: 2.5rem;
+  }
+}
+
+#contact-section {
+  background-color: #f8f9fa;
+}
+
+#contact-section .contact-header {
+  color: #6c757d;
+}
+
+#contact-section .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px auto;
+  width: 50%;
+}
+
+#contact-section .contact-form .input-field {
+  margin-bottom: 25px;
+  background-color: rgba(107, 117, 125, 0.1);
+  border-bottom: 2px solid #0d6efd;
+  padding: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#contact-section .contact-form .input-field:focus {
+  cursor: pointer;
+  outline: none;
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+#contact-section .contact-form .input-field:hover {
+  cursor: pointer;
+}
+
+#contact-section .contact-form .input-label {
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #333;
+  opacity: 0.7;
+}
+
+#contact-section .contact-form .send-message {
+  width: 50%;
+  margin: auto;
+  font-weight: 700;
+}
+
+#contact-section .contact-form .send-message:hover {
+  border: 1px solid #0d6efd;
+}
+
+@media screen and (max-width: 767px) {
+  #contact-section .contact-form {
+    width: 100%;
+  }
+  #contact-section .contact-form .send-message {
+    width: 100%;
   }
 }
 
