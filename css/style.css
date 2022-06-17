@@ -719,22 +719,6 @@ header .header-title {
   font-size: 1.2rem;
 }
 
-#about .download-cv {
-  margin-right: 20px;
-}
-
-#about .download-cv,
-#about .download-resume {
-  width: 20%;
-  margin-top: 30px;
-  text-align: center;
-}
-
-#about .download-cv:hover,
-#about .download-resume:hover {
-  border: 1px solid #0d6efd;
-}
-
 @media screen and (max-width: 767px) {
   #about .download-cv {
     margin-right: 0;
@@ -756,13 +740,14 @@ header .header-title {
 .main-footer {
   background-color: #0d6efd;
   padding: 50px 0;
-  text-align: center;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .main-footer .author-info {
   font-style: italic;
   font-weight: 300;
+  margin: 0 auto;
 }
 
 .btn {
@@ -786,6 +771,35 @@ header .header-title {
 
 .learn-more {
   font-weight: 700;
+}
+
+.card-btn {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.card-btn:hover {
+  border: 1px solid #0d6efd;
+}
+
+.download-cv {
+  margin-right: 20px;
+}
+
+.download-cv,
+.download-resume {
+  width: 20%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.download-cv:hover,
+.download-resume:hover {
+  border: 1px solid #0d6efd;
 }
 
 .card-wrapper {
@@ -812,7 +826,7 @@ header .header-title {
 
 .card-wrapper .card .card-img {
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 .card-wrapper .card .card-body {
@@ -825,7 +839,7 @@ header .header-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 50%;
+  height: 60%;
   padding: 10px;
   text-align: center;
 }
@@ -854,19 +868,6 @@ header .header-title {
   color: #333;
   border-radius: 15px;
   margin-top: 10px;
-}
-
-.card-wrapper .card .card-body .card-btn {
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  text-align: center;
-  font-weight: 700;
-}
-
-.card-wrapper .card .card-body .card-btn:hover {
-  border: 1px solid #0d6efd;
 }
 
 @media screen and (max-width: 1200px) {
