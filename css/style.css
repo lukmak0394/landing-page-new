@@ -466,7 +466,8 @@ button {
   background-color: #0d6efd;
 }
 
-.nav-bg-primary .navbar .nav-item .nav-link:hover {
+.nav-bg-primary .navbar .nav-item .nav-link:hover,
+.nav-bg-primary .navbar .nav-item .switch-lang:hover {
   background-color: #FFFFFF;
   color: #0d6efd;
 }
@@ -685,6 +686,12 @@ header .header-title {
   color: #6c757d;
 }
 
+#portfolio .container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 #about {
   text-align: justify;
 }
@@ -751,6 +758,7 @@ header .header-title {
   border-radius: 5px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  border: 1px solid transparent;
 }
 
 .btn-blue {
@@ -761,10 +769,16 @@ header .header-title {
 .btn-blue:hover {
   background-color: #FFFFFF;
   color: #0d6efd;
+  cursor: pointer;
 }
 
 .learn-more {
   font-weight: 700;
+}
+
+.card-wrapper {
+  width: 24%;
+  margin-bottom: 15px;
 }
 
 .card-wrapper .card {
@@ -779,6 +793,9 @@ header .header-title {
           flex-direction: column;
   overflow: hidden;
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  background-color: rgba(51, 51, 51, 0.01);
 }
 
 .card-wrapper .card .card-img {
@@ -797,14 +814,60 @@ header .header-title {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 50%;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
 }
 
-.card-wrapper .card .card-body p {
+.card-wrapper .card .card-body .card-title {
+  color: #333;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.card-wrapper .card .card-body .card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 10px;
+}
+
+.card-wrapper .card .card-body .card-description .technology {
+  padding: 3px 10px;
+  background-color: rgba(1, 1, 1, 0.2);
+  color: #333;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
 .card-wrapper .card .card-body .card-btn {
   margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.card-wrapper .card .card-body .card-btn:hover {
+  border: 1px solid #0d6efd;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-wrapper {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .card-wrapper {
+    width: 49%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

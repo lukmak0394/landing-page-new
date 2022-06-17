@@ -1,10 +1,16 @@
 .card-wrapper {
+    width: 24%;
+    margin-bottom: 15px;
 
     .card {
         @include flexbox;
         flex-direction: column;
         overflow: hidden;
         height: 100%;
+        border: 1px solid rgba(0,0,0,0.125);
+        border-radius: 5px;
+        background-color: rgba(51, 51, 51,0.01);
+       
  
         .card-img {
             width: 100%;
@@ -15,17 +21,58 @@
             @include flexbox;
             flex-direction: column;
             height: 50%;
-            padding: 5px;
+            padding: 10px;
+            text-align: center;
+
+            .card-title {
+                color: #333;
+                font-size: 1rem;
+                opacity: 0.7;
+            }
     
-            p {
+            .card-description {
+                @include flexbox;
+                justify-content: space-evenly;
                 margin-bottom: 10px;
+
+                .technology {
+                    padding: 3px 10px;
+                    background-color: rgba(1, 1, 1, 0.2);
+                    color: #333;
+                    border-radius: 15px;
+                    margin-top: 10px;
+                }
+
             }
     
             .card-btn {
                 margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            .card-btn:hover {
+                border: 1px solid $bg-primary;
             }
         }
     
     }
     
+}
+
+@media screen and (max-width: 1200px) {
+    .card-wrapper {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .card-wrapper {
+        width: 49%;
+    }
 }

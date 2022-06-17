@@ -67,7 +67,8 @@
 
     .navbar {
         .nav-item {
-            .nav-link:hover {
+            .nav-link:hover,
+            .switch-lang:hover {
                 background-color: $white;
                 color: $bg-primary;
             }
