@@ -29,8 +29,15 @@ const phoneLabel = document.querySelector('#phone').previousElementSibling;
 const messageLabel = document.querySelector('#message').previousElementSibling;
 const formBtn = document.querySelector('.send-message');
 
+// Download cv buttons
+const downloadCv = document.querySelector('.download-cv');
+const downloadResume = document.querySelector('.download-resume');
+
 // About me
 const aboutDescription = document.querySelector('.description');
+
+// author info
+const authorInfo = document.querySelector('.author-info');
 
 
 const updateElements = (data) => {
@@ -50,6 +57,9 @@ const updateElements = (data) => {
     messageLabel.innerText = data.message_label;
     formBtn.innerHTML = data.form_btn;
     aboutDescription.innerHTML = data.about_description;
+    downloadCv.innerText = data.download_cv;
+    downloadResume.innerText = data.download_resume;
+    authorInfo.innerText = data.author_info;
 }
 
 const getData = (directory) => {
