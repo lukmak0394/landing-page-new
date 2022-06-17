@@ -22,9 +22,6 @@
             height: 100%;
         }
 
-
-
-     
     
         .card-body {
             @include flexbox;
@@ -61,7 +58,7 @@
     
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
     .card-wrapper {
         width: 100%;
         margin-top: 25px;
