@@ -29,6 +29,10 @@ const phoneLabel = document.querySelector('#phone').previousElementSibling;
 const messageLabel = document.querySelector('#message').previousElementSibling;
 const formBtn = document.querySelector('.send-message');
 
+// About me
+const aboutDescription = document.querySelector('.description');
+
+
 const updateElements = (data) => {
     aboutLink.innerText = data.about;
     portfolioLink.innerText = data.portfolio;
@@ -45,6 +49,7 @@ const updateElements = (data) => {
     phoneLabel.innerText = data.phone_label;
     messageLabel.innerText = data.message_label;
     formBtn.innerHTML = data.form_btn;
+    aboutDescription.innerHTML = data.about_description;
 }
 
 const getData = (directory) => {

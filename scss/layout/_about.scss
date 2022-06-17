@@ -1,0 +1,57 @@
+#about {
+    text-align: justify;
+
+    .container {
+        @include flexbox;
+        @include flex-center;
+    }
+
+    .about-header {
+        color: $bg-primary;
+    }
+
+    .description {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    .download-cv {
+        margin-right: 20px;
+    }
+
+    .download-cv,
+    .download-resume {
+        width: 20%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .download-cv:hover,
+    .download-resume:hover {
+        border: 1px solid $bg-primary;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #about {
+
+        .download-cv {
+            margin-right: 0;
+        }
+        .download-cv,
+        .download-resume {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    #about {
+        .download-cv,
+        .download-resume {
+            width: 35%;
+        }
+    }
+}

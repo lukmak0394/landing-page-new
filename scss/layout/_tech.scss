@@ -1,0 +1,19 @@
+#tech-stack {
+
+    .tech-stack-header {
+        color: $bg-primary;
+    }
+
+    .tech-img-wrapper {
+        @include flexbox;
+        @include flex-center;
+        padding: 20px;
+        margin: 20px auto;
+
+        .tech-img {
+            width: 100%;
+            
+        }
+    }
+
+}

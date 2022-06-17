@@ -671,6 +671,99 @@ header .header-title {
   }
 }
 
+#tech-stack .tech-stack-header {
+  color: #0d6efd;
+}
+
+#tech-stack .tech-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+#tech-stack .tech-img-wrapper .tech-img {
+  width: 100%;
+}
+
+#portfolio {
+  background-color: #f8f9fa;
+}
+
+#portfolio .projects-header {
+  color: #6c757d;
+}
+
+#about {
+  text-align: justify;
+}
+
+#about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-header {
+  color: #0d6efd;
+}
+
+#about .description {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+#about .download-cv {
+  margin-right: 20px;
+}
+
+#about .download-cv,
+#about .download-resume {
+  width: 20%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#about .download-cv:hover,
+#about .download-resume:hover {
+  border: 1px solid #0d6efd;
+}
+
+@media screen and (max-width: 767px) {
+  #about .download-cv {
+    margin-right: 0;
+  }
+  #about .download-cv,
+  #about .download-resume {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #about .download-cv,
+  #about .download-resume {
+    width: 35%;
+  }
+}
+
 .btn {
   padding: 10px 30px;
   border-radius: 5px;
