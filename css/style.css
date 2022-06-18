@@ -844,6 +844,7 @@ header .header-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 200px;
   padding: 10px;
   text-align: center;
 }
@@ -864,7 +865,6 @@ header .header-title {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 10px;
 }
 
 .card-wrapper .card .card-body .card-description .technology {

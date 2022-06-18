@@ -26,6 +26,7 @@
         .card-body {
             @include flexbox;
             flex-direction: column;
+            height: 200px;
             padding: 10px;
             text-align: center;
 
@@ -39,7 +40,6 @@
             .card-description {
                 @include flexbox;
                 justify-content: space-evenly;
-                margin-bottom: 10px;
 
                 .technology {
                     padding: 3px 10px;
