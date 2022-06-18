@@ -448,11 +448,17 @@ button {
 }
 
 .main-nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 2px 0;
   border-bottom: 3px solid #0d6efd;
+}
+
+.main-nav .logo a {
+  color: inherit;
 }
 
 .main-nav .menu-icon {
