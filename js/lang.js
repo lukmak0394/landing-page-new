@@ -1,9 +1,5 @@
 export  { language }
 
-document.querySelector('body').onload = () => {
-    getData('./languages/en.json')
-}
-
 let language = "EN";
 
 // Elements to be updated when switching language:

@@ -62,7 +62,7 @@ const validate = (e) => {
         } 
     }
 
-    validationErrors === 0 ? true : e.preventDefault();
+    validationErrors === 0 ? requiredFields.forEach((el) => el.value === '') : e.preventDefault();
 }
 
 form.addEventListener('submit',validate);
